@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <raiz>
-<msg dispositivo="DISPOSITIVO X">
-  HOLA <!-- o ADIOS-->
-</msg>
+  <msg dispositivo="DISPOSITIVO X">
+    HOLA <!-- o ADIOS-->
+  </msg>
 </raiz>
