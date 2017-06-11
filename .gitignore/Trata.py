@@ -30,7 +30,7 @@ def getHabitaciones(nameHotel):
 def requestHabitacion(data):
     '''
     :param data:
-    '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><hotel>nombre del hotel</hotel><habitacion><tipo>STAR</tipo><cantidad>3</cantidad><dateIn>2016-05-05</dateIn><dateOut>2016-05-15</dateOut><user>JOSE123</user></habitacion></raiz>'
+    '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><habitacion><hotel>nombre del hotel</hotel><tipo>STAR</tipo><cantidad>3</cantidad><dateIn>2016-05-05</dateIn><dateOut>2016-05-15</dateOut><user>JOSE123</user></habitacion></raiz>'
     :return:
     '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><userBanco>JOSE21JOSE</userBanco><cantidad>100000</cantidad></raiz>'
     '''
