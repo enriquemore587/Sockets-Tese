@@ -1,4 +1,4 @@
-def login(data):
+ def login(data):
     '''
     :param data:
         data = '<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><usr pwd="XXXXXXX">JOSE123</usr></raiz>'
@@ -24,13 +24,13 @@ def getHabitaciones(nameHotel):
     :param nameHotel:
         '<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHabitaciones"><hotel>nombre del hotel</hotel></raiz>'
     :return:
-        '<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHabitaciones"><habitacion precio="2500.50">STAR<cantidad>6</cantidad></habitacion><habitacion precio="1500.50">GOLDEN<cantidad>16</cantidad></habitacion><habitacion precio="500.00">CLASIC<cantidad>2</cantidad></habitacion></raiz>'
+        '<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHabitaciones"><hotel>nombre del hotel</hotel><habitacion precio="2500.50">STAR<cantidad>6</cantidad></habitacion><habitacion precio="1500.50">GOLDEN<cantidad>16</cantidad></habitacion><habitacion precio="500.00">CLASIC<cantidad>2</cantidad></habitacion></raiz>'
     '''
     pass
 def requestHabitacion(data):
     '''
     :param data:
-    '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><habitacion><tipo>STAR</tipo><cantidad>3</cantidad><dateIn>2016-05-05</dateIn><dateOut>2016-05-15</dateOut><user>JOSE123</user></habitacion></raiz>'
+    '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><hotel>nombre del hotel</hotel><habitacion><tipo>STAR</tipo><cantidad>3</cantidad><dateIn>2016-05-05</dateIn><dateOut>2016-05-15</dateOut><user>JOSE123</user></habitacion></raiz>'
     :return:
     '<?xml version="1.0" encoding="utf-8"?><raiz nivel="requestHabitacion"><userBanco>JOSE21JOSE</userBanco><cantidad>100000</cantidad></raiz>'
     '''
