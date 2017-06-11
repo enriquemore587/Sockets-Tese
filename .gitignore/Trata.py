@@ -3,7 +3,7 @@ def login(data):
     :param data:
         data = '<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><usr pwd="XXXXXXX">JOSE123</usr></raiz>'
     :return:
-        data = '<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><usr name="JOSE ENRIQUE VERGARA AMBRIZ">JOSE123</usr></raiz>'
+        data = '<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><ciudad>CANCUN</ciudad><ciudad>MEXICO</ciudad><ciudad>MONTERREY</ciudad><ciudad>PUEBLA</ciudad><ciudad>VALLE DE BRAVO</ciudad></raiz>'
     '''
     pass
 
