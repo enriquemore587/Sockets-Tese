@@ -1,0 +1,48 @@
+login
+
+u - H
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><usr pwd="123">more</usr></raiz>'
+H - u
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="login"><ciudad>CANCUN</ciudad><ciudad>MEXICO</ciudad><ciudad>MONTERREY</ciudad><ciudad>PUEBLA</ciudad><ciudad>VALLE DE BRAVO</ciudad></raiz>
+if incorrecto
+'False'
+
+
+peticion de hoteles en una ciudad
+u - H
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHotel"><ciudad>CANCUN</ciudad></raiz>
+H - u
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHotel"><hotel clasificacion="5 ESTRELLAS">Hotel Super More</hotel><hotel clasificacion="3 ESTRELLAS">Hotel mini super More</hotel></raiz>
+
+
+peticion de habitaciones en un hotel
+u - H
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHabitaciones"><hotel>Hotel Super More</hotel></raiz>
+H - u
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="getHabitaciones"><hotel>Hotel Super More</hotel><habitacion precio="5000.0">Lujo<disponibles>5</disponibles></habitacion><habitacion precio="2000.0">Sencilla<disponibles>34</disponibles></habitacion><habitacion precio="8000.0">Golden<disponibles>9</disponibles></habitacion></raiz>
+
+
+reserva
+u - H
+<?xml version="1.0" encoding="utf-8"?>
+<raiz nivel="requestHabitacion">
+<habitacion>
+	<hotel>Hotel Super More</hotel>
+	<tipo>Lujo</tipo>
+	<cantidad>3</cantidad>
+	<dateIn>2016-05-05</dateIn>
+	<dateOut>2016-05-15</dateOut>
+	<user>more</user>
+</habitacion>
+</raiz>
+
+H - u
+#correcto ya tienes tu reserva
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="confirmHabitacion"><resp>0</resp></raiz>
+
+# alguna fecha no esta disponible
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="confirmHabitacion"><resp>1</resp></raiz>
+
+# no tienes fondos suficientes
+<?xml version="1.0" encoding="utf-8"?><raiz nivel="confirmHabitacion"><resp>2</resp></raiz>
+
